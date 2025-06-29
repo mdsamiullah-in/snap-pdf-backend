@@ -21,7 +21,7 @@ cloudinary.v2.config({
 });
 
 app.use(cors({
-  origin: 'http://localhost:5173',
+  origin: 'https://snap-pdf-frontend-eight.vercel.app',
   credentials: true, 
 }));
 
