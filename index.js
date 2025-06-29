@@ -10,7 +10,7 @@ import cookieParser from 'cookie-parser';
 const app = express();
 const PORT = process.env.PORT;
 
-mongoose.connect(process.env.Db)
+mongoose.connect(process.env.DB)
 
 import bodyParser from 'body-parser'
 
@@ -51,7 +51,6 @@ app.listen(PORT, () => {
   console.log(`AI Chat Service running on port ${PORT}`);
 });
 
-
 app.get("/", (req, res) => {
-  res.send("Server is working ✅");
+  res.send("Backend is working!");
 });
